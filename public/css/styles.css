@@ -1,0 +1,400 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*BODY*/
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #ebebeb;
+    margin: 0px;
+}
+
+
+p {
+    font-size: 12px;
+}
+
+h3 {
+    font-size: 24px;
+    padding: 2%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.precio {
+    font-size: 18px;
+    width: 30%;
+    text-align: start;
+}
+
+/*HEADER*/
+
+header {
+    background-color: #EAC926;
+    padding: 10px;
+}
+
+.top {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+    align-items: center;
+}
+
+header div.top .top2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.logo {
+    padding: 5%;
+    width: 50%;
+}
+
+header .form {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #FFF;
+    justify-content: space-around;
+}
+
+.burger-menu {
+    color: white;
+    background-color: #1259c3;
+    width: 40px;
+    border-radius: 5px;
+    margin: auto;
+    height: 40px;
+    font-size: 20px;
+    padding: 8px;
+    text-align: center;
+}
+
+/*MAIN*/
+
+.descuento {
+    color: #39b54a;
+    width: 70%;
+    text-align: start;
+}
+
+.descuento,
+.descripciones {
+    font-size: 16px;
+}
+
+.credito,
+.seguridad,
+.regalo {
+    color: #1259c3;
+    text-align: center;
+}
+
+.desc-articulo {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+body main article i {
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+footer div article {
+    text-align: center;
+    padding: 2%;
+}
+
+footer div article:hover {
+    background-color: #EAC926;
+}
+
+footer p.copy {
+    text-align: center;
+}
+
+.banner {
+    width: 100%;
+    margin-top: 0px;
+}
+
+.producto-img {
+    width: 90%;
+}
+
+main section article:hover i {
+    transform: rotateZ(-90deg);
+}
+
+main {
+    width: 100%;
+    text-align: center;
+}
+
+main section div article {
+    background-color: white;
+    margin: 10px 10px 10px 10px;
+}
+
+main section article .descripcion {
+    display: none;
+}
+
+body header .nav-bar {
+    font-size: 12px;
+    margin-left: 20px;
+    display: none;
+}
+
+body header .nav-bar .contenido li,
+body header .nav-bar .acceso li {
+    padding: 1%;
+    list-style: none;
+}
+
+/*LOGIN*/
+
+.enviar:hover {
+    background-color: #0022AA;
+}
+
+main form {
+    margin: auto;
+    padding: 10%;
+    width: 80%;
+}
+
+main form input {
+    border: none;
+    width: 100%;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+.enviar {
+    width: 100%;
+    background-color: #1259c3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 1%;
+}
+
+/*REGISTER*/
+h4 {
+    text-align: start;
+}
+
+.perfilUsuario-radio {
+    display: flex;
+}
+
+.categoriaDeInteres {
+    display: flex;
+    flex-direction: column;
+}
+
+.categoriaDeInteres div {
+    padding: 1%;
+}
+
+input:invalid{
+    border-color: red;
+}
+
+span.mensaje-error{
+    display: none;
+    color: red;
+}
+
+input:invalid + .mensaje-error{
+    display: block;
+}
+
+/*MEDIA QUERY*/
+
+@media (min-width: 361px) {
+    body header .nav-bar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    body header .nav-bar .contenido {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        justify-content: flex-start;
+    }
+
+    body header .nav-bar .acceso {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        justify-content: flex-end;
+    }
+
+    main section div.productos,
+    main section div.ofertas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .item {
+        width: 44%;
+    }
+
+    .precio{
+        width: 30%;
+    }
+
+    .descuento {
+        width: 70%;
+    }
+
+    h3 {
+        text-align: start;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    body header .top {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 33%;
+    }
+
+    header .form {
+        display: flex;
+        align-items: center;
+        padding: 2px;
+        font-size: 11px;
+        width: 30%;
+        border: 1px solid black;
+        background-color: #FFF;
+        justify-content: space-between;
+    }
+
+    header div.top .top2 {
+        width: 33%;
+    }
+}
+
+@media (min-width: 769px) {
+    .burger-menu {
+        display: none;
+    }
+
+    body header {
+        height: 16vw;
+    }
+
+    .logo {
+        padding: 0%;
+    }
+
+    body header .nav-bar .contenido li,
+    body header .nav-bar .acceso li {
+        font-size: 15px;
+    }
+
+    main section div.productos,
+    main section div.ofertas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .item {
+        width: 22%;
+    }
+
+    .precio{
+        width: 50%;
+    }
+
+    .descuento{
+        width: 50%;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    footer div.pie {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .categoriaDeInteres {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    footer p.copy {
+        width: 100%;
+        text-align: start;
+    }
+
+    main form {
+        width: 60%;
+    }
+
+    main section div article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    
+    main section article:hover .descripcion {
+        display: block;
+    }
+}
