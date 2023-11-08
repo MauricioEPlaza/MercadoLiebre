@@ -172,7 +172,7 @@ main section div article {
 }
 
 main section article .descripcion {
-    display: none;
+    opacity: 0;
 }
 
 body header .nav-bar {
@@ -284,11 +284,11 @@ input:invalid + .mensaje-error{
     }
 
     .precio{
-        width: 30%;
+        width: 50%;
     }
 
     .descuento {
-        width: 70%;
+        width: 50%;
     }
 
     h3 {
@@ -395,6 +395,6 @@ input:invalid + .mensaje-error{
     }
     
     main section article:hover .descripcion {
-        display: block;
+        opacity: 1;
     }
 }
