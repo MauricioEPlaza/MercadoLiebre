@@ -4,7 +4,7 @@ const port = process.env.PORT || 3001;
 
 app.use("/static", express.static(__dirname + "/public"));
 
-app.get("/home", (req,res) => {
+app.get("/", (req,res) => {
     res.sendFile(__dirname + "/views/home.html");
 });
 
